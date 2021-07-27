@@ -9,7 +9,7 @@ const loginRoute = require('./routes/login');
 const getUser = require('./routes/getUser');
 
 
-const port = 8000;
+const port = process.env.PORT || 8000;
 app.listen(port, async function () {
     console.log('server is listening on port......' + port);
 });
